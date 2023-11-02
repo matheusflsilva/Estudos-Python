@@ -1,17 +1,12 @@
-def contador(i, f, p):
-    """
-    -> Faz uma contagem e mostra na tela.
-    :param i: início da contagem
-    :param f: fim da contagem
-    :param p: passo da contagem
-    :return: sem retorno
-    Função criada por Matheus Filipe na aula do CursoemVideo.
-    """
-    c = i
-    while c <= f:
-        print(f'{c} ', end='')
-        c += p
-    print('FIM!')
+def par(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
 
 
-help(contador)
+num = int(input('Digite um número: '))
+if par(num):
+    print('É par!')
+else:
+    print('Não é par!')
