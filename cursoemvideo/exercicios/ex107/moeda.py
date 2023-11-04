@@ -1,17 +1,18 @@
-def aumentar(num, porcen):
-    a = num + (num * porcen / 100)
-    return a
+def aumentar(preco, taxa):
+    res = preco + (preco * taxa/100)
+    return res
 
 
-def diminuir(num, porcen):
-    d = num - (num * porcen / 100)
-    return d
+def diminuir(preco, taxa):
+    res = preco - (preco * taxa/100)
+    return res
 
 
-def dobro(num):
-    return num * 2
+def dobro(preco):
+    res = preco * 2
+    return res
 
 
-def metade(num):
-    return num / 2
-
+def metade(preco):
+    res = preco / 2
+    return res
